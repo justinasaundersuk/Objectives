@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<form method="post" action="" onsubmit="return validateForm();" novalidate>
+
+    <h1>JavaScript User Signup</h1>
+
+    <div class="row">
+        <div class="col-xs-12 col-ms-8 col-sm-6">
+            <div id="form-error">Error submitting form, please correct and retry.</div>
+            <div id="form-success">Thanks for your submission.</div>
+
+            <fieldset class="form-group">
+                <label class="form-control-label" for="title">Title</label>
+                <select id="title" class="form-control notick">
+                    <option value="">Please choose</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                </select>
+                <span class="errormessage">Please choose your title.</span>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label class="form-control-label" for="firstname">First Name</label>
+                <input type="text" class="form-control notick" id="firstname" placeholder="Enter your first name" />
+                <span class="errormessage">First name field cannot be blank.</span>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label class="form-control-label" for="firstname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Enter your last name" />
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label class="form-control-label" for="emailaddress">Email Address</label>
+                <input type="email" class="form-control" id="emailaddress" placeholder="Enter email address" />
+                <span class="errormessage">Email address is invalid.</span>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label class="form-control-label" for="phonenumber">Phone number</label>
+                <input type="tel" class="form-control" id="phonenumber" placeholder="Enter phone number" />
+                <span class="errormessage">Phone number should be a minimum of 6 digits.</span>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label class="form-control-label dateofbirth" for="dateofbirth-day">Date of birth</label>
+                <div class="dob-container">
+                    <input type="tel" class="form-control dob two notick" id="dateofbirth-day" placeholder="DD" maxlength="2" />
+                    <input type="tel" class="form-control dob two notick" id="dateofbirth-month" placeholder="MM" maxlength="2" />
+                    <input type="tel" class="form-control dob four notick" id="dateofbirth-year" placeholder="YYYY" maxlength="4" />
+                    <span class="errormessage inline">Date of birth is invalid.</span>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label class="form-control-label" for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter a password" />
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label class="form-control-label" for="password-confirm">Confirm Password</label>
+                <input type="password" class="form-control" id="password-confirm" placeholder="Confirm password" />
+            </fieldset>
+
+            <span id="password-error" class="errormessage"></span>
+          
+            <label class="form-control-label" for="gender">Gender</label>
+            <div class="btn-group checkboxes" data-toggle="buttons">
+                <label class="btn btn-primary">
+                    <input type="radio" name="gender" id="gender-male" autocomplete="off"> Male
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="gender" id="gender-female" autocomplete="off"> Female
+                </label>
+            </div>
+            <span id="gender-error" class="errormessage inline">Please choose a gender.</span>
+
+            <div class="clearfix"></div>
+
+            <label class="form-control-label margin" for="terms-conditions">Agree to our terms &amp; conditions?</label>
+            <div class="btn-group checkboxes" data-toggle="buttons">
+                <label class="btn btn-primary">
+                    <input type="checkbox" id="terms-conditions" autocomplete="off"> I agree
+                </label>
+            </div>
+            <span id="terms-error" class="errormessage inline">Please indicate that you agree to our terms &amp; conditions.</span>
+
+            <div class="clearfix"></div>
+
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+    </div>
+
+</form>
