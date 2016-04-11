@@ -4,8 +4,8 @@
 $(document).ready(function () {
     $('#datepicker').datepicker({
         showOn: "button",
-        buttonImage: "/content/images/icon-calendar.png",
         buttonImageOnly: true,
+        buttonImage: "/content/images/icon-calendar.png",
         buttonText: "Select date",
         dateFormat: "dd/mm/yy"
 
