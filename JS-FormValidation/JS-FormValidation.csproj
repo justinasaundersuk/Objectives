@@ -210,10 +210,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\css\styles.css" />
-    <Content Include="Content\css\styles.min.css">
-      <DependentUpon>styles.css</DependentUpon>
-    </Content>
+    <Content Include="Content\css\base.css" />
     <Content Include="Content\images\icon-calendar.png" />
     <Content Include="Content\images\success.png" />
     <Content Include="Content\sass\vendors\bootstrap\fonts\glyphicons-halflings-regular.svg" />
@@ -226,16 +223,13 @@
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Content\sass\helpers\_mixins.scss" />
     <Content Include="Content\sass\helpers\_functions.scss" />
-    <Content Include="Content\sass\partials\styles.scss" />
+    <Content Include="Content\sass\partials\_styles.scss" />
     <Content Include="Content\sass\base.scss" />
     <Content Include="Content\sass\base\_variables.scss" />
     <Content Include="Content\sass\base\_normalize.scss" />

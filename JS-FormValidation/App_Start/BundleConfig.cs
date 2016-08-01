@@ -31,7 +31,7 @@ namespace JS_FormValidation
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/css/styles.min.css"));
+                      "~/Content/css/base.css"));
         }
     }
 }
